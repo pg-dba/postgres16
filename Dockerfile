@@ -13,7 +13,6 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     wget https://github.com/zubkov-andrei/pg_profile/releases/download/4.3/pg_profile--4.3.tar.gz && \
     tar xzf pg_profile--4.3.tar.gz --directory $(pg_config --sharedir)/extension && \
 #   pg16 поддерживается только с pg_profile 4.3
-#   в 4.2, 4.3 размеры отчётов в несколько сотен MB \
     apt-get -y purge wget && \
     apt-get update && \
     apt-get clean all && \
