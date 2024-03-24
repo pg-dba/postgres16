@@ -1,4 +1,4 @@
-# postgres14
+# postgres16
 
 docker build -t sqldbapg/postgres:16 .
 

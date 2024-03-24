@@ -10,8 +10,8 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
 #    wget https://github.com/zubkov-andrei/pg_profile/releases/download/4.1/pg_profile--4.1.tar.gz && \
 #    tar xzf pg_profile--4.1.tar.gz --directory $(pg_config --sharedir)/extension && \
 #    wget https://github.com/zubkov-andrei/pg_profile/releases/download/4.2/pg_profile--4.2.tar.gz && \
-    wget https://github.com/zubkov-andrei/pg_profile/releases/download/4.3/pg_profile--4.3.tar.gz && \
-    tar xzf pg_profile--4.3.tar.gz --directory $(pg_config --sharedir)/extension && \
+    wget https://github.com/zubkov-andrei/pg_profile/releases/download/4.4/pg_profile--4.4.tar.gz && \
+    tar xzf pg_profile--4.4.tar.gz --directory $(pg_config --sharedir)/extension && \
 #   pg16 поддерживается только с pg_profile 4.3
     apt-get -y purge wget && \
     apt-get update && \
