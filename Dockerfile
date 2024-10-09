@@ -15,6 +15,8 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     wget https://github.com/zubkov-andrei/pg_profile/releases/download/4.6/pg_profile--4.6.tar.gz && \
     tar xzf pg_profile--4.6.tar.gz --directory $(pg_config --sharedir)/extension && \
 #   pg16 поддерживается только с pg_profile 4.3
+    wget https://apt.postgresql.org/pub/repos/apt/pool/main/p/pg-hint-plan-16/postgresql-16-pg-hint-plan_1.6.1-1.pgdg120%2B1_amd64.deb -O /root/postgresql-16-pg-hint-plan_1.6.1-1.pgdg120+1_amd64.deb && \
+    dpkg -i /root/postgresql-16-pg-hint-plan_1.6.1-1.pgdg120+1_amd64.deb && \
     apt-get -y purge wget && \
     apt-get update && \
     apt-get clean all && \
