@@ -1,6 +1,6 @@
 FROM postgres:16
 
-COPY v16/*.sh /var/lib/postgresql/
+COPY *.sh /var/lib/postgresql/
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
